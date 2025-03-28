@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>LoginMainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-image: url(:/images/images/ic_hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+QPushButton {
+    font-family: &quot;Poppins&quot;, sans-serif;
+    font-size: 12px; /* Giảm size chữ */
+    font-weight: bold;
+    color: white;
+    background-color: #2E5636;
+    border: 2px solid #1E3E26;
+    border-radius: 12px; /* Giảm độ bo góc */
+    padding: 5px 15px; /* Giảm padding để nút nhỏ hơn */
+    min-width: 50px; /* Giảm kích thước tối thiểu của nút */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+QPushButton:hover {
+    background-color: #1E3E26;
+    transform: scale(1.05);
+}
+
+QPushButton:pressed {
+    background-color: #153021;
+    transform: scale(0.95);
+}
+QLabel {
+    color: #2E5636; /* Xanh lá đậm hơn */
+    background: transparent;
+    font-size: 12px;
+	font-weight: normal;
+    letter-spacing: 1px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+    background-image: url(:/newPrefix/hotel3.jpg); /* Đúng tên file */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+QFrame {
+    background-color: rgba(0, 0, 0, 200); /* Màu nền đen đậm hơn */
+    border-radius: 15px;  /* Bo góc cho đẹp, bỏ nếu không thích */
+}
+
+
+QLabel {
+    color: white;
+    font: bold 12pt &quot;Segoe UI&quot;;
+    border: none; /* Bỏ viền đen */
+    background: transparent; /* Đảm bảo nền trong suốt */
+}
+
+
+/* Mặc định cho QLineEdit */
+QLineEdit {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Mặc định cho QPushButton */
+QPushButton {
+    background-color: pink;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: lightpink;  /* Màu nhẹ khi rê chuột */
+}
+
+/* Đổi màu chữ QLabel (Username, Password) */
+QLabel {
+    color: white;
+    font: bold 12pt &quot;Segoe UI&quot;;
+}</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>331</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: rgba(255, 255, 255, 0.4); /* Nền trắng mờ */
+    border: none; /* Không viền hoặc có thể thêm viền nhẹ */
+    border-radius: 15px; /* Bo góc mềm mại */
+}
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <widget class="QLineEdit" name="lineEditPassword">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>200</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng rõ hơn */
+    border: 2px solid rgba(255, 255, 255, 1); /* Viền trắng đậm */
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(0, 0, 0, 0.7); /* Viền đen khi nhập */
+    background-color: rgba(255, 255, 255, 1); /* Sáng hơn khi nhập */
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonLogin">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>300</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    font-family: &quot;Poppins&quot;, sans-serif;
+    font-size: 14px; /* Giảm size chữ */
+    font-weight: bold;
+    color: white;
+    background-color: #2E5636;
+    border: 2px solid #1E3E26;
+    border-radius: 12px; /* Giảm độ bo góc */
+    padding: 5px 15px; /* Giảm padding để nút nhỏ hơn */
+    min-width: 80px; /* Giảm kích thước tối thiểu của nút */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+QPushButton:hover {
+    background-color: #1E3E26;
+    transform: scale(1.05);
+}
+
+QPushButton:pressed {
+    background-color: #153021;
+    transform: scale(0.95);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_login.png</normaloff>../images/ic_login.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #2E5636; /* Xanh lá đậm hơn */
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Username:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #2E5636; /* Xanh lá đậm hơn */
+    background: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditUsername">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>140</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng rõ hơn */
+    border: 2px solid rgba(255, 255, 255, 1); /* Viền trắng đậm */
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(0, 0, 0, 0.7); /* Viền đen khi nhập */
+    background-color: rgba(255, 255, 255, 1); /* Sáng hơn khi nhập */
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="dragEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::LogicalMoveStyle</enum>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>271</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #2E5636; /* Xanh lá đậm hơn */
+    background: transparent;
+    font-size: 13px;
+    font-weight: bold;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Forget your Username or Password?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonExit">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>300</y>
+       <width>114</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    font-family: &quot;Poppins&quot;, sans-serif;
+    font-size: 14px; /* Giảm size chữ */
+    font-weight: bold;
+    color: white;
+    background-color: #2E5636;
+    border: 2px solid #1E3E26;
+    border-radius: 12px; /* Giảm độ bo góc */
+    padding: 5px 15px; /* Giảm padding để nút nhỏ hơn */
+    min-width: 80px; /* Giảm kích thước tối thiểu của nút */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+QPushButton:hover {
+    background-color: #1E3E26;
+    transform: scale(1.05);
+}
+
+QPushButton:pressed {
+    background-color: #153021;
+    transform: scale(0.95);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Exit</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_exit.png</normaloff>../images/ic_exit.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>80</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #2E5636; /* Xanh lá đậm hơn */
+    background: transparent;
+    font-size: 25px;
+    font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>171</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #2E5636; /* Xanh lá đậm hơn */
+    background: transparent;
+    font-size: 20px;
+	font-weight: normal;
+    letter-spacing: 1px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Welcome Back</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>626</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditUsername</tabstop>
+  <tabstop>lineEditPassword</tabstop>
+  <tabstop>pushButtonLogin</tabstop>
+  <tabstop>pushButtonExit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="LoginMainWindow.ui"/>
+  <include location="../hotel.qrc"/>
+ </resources>
+ <connections/>
+</ui>

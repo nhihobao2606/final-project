@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>591</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>BookingApp</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-image: url(:/images/images/abc2.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+/* Chỉnh màu cho QPushButton */
+QPushButton {
+    background-color: #FFB703; /* Cam nhạt để hợp với xanh lá */
+    color: white;
+    font-size: 16px;  /* Tăng kích thước chữ */
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #E85D04; /* Cam đậm khi hover */
+}
+QLabel {
+    font-size: 14px;
+	font-weight: bold;
+    color: #114514; 
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>511</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+    background-color: rgba(255, 255, 255, 180); 
+    border: 2px solid white; 
+    border-radius: 20px; 
+    padding: 10px;
+}
+
+QGroupBox:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>Vui lòng nhập các thông tin sau:</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Tên khách hàng:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Số điện thoại:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>CCCD:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Phòng:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditTenKH">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>40</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1.5px solid white;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditSDT">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>90</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1.5px solid white;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditCCCD">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>140</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1.5px solid white;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+}
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditSTTP">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>190</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1.5px solid white;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Ngày nhận phòng:</string>
+     </property>
+    </widget>
+    <widget class="QDateTimeEdit" name="dateTimeEdit">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>240</y>
+       <width>271</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDateTimeEdit {
+    background-color: rgba(255, 255, 255, 200);
+    border: 1.5px solid white;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+}
+QDateTimeEdit::up-button, QDateTimeEdit::down-button {
+    width: 14px;
+    height: 14px;
+    padding: 3px;
+}
+
+/* Tạo mũi tên nhỏ hơn */
+QDateTimeEdit::up-arrow, QDateTimeEdit::down-arrow {
+    width: 10px;
+    height: 10px;
+}</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>120</y>
+      <width>631</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	font: 14pt &quot;MS Shell Dlg 2&quot;;
+    background-color: rgba(255, 255, 255, 180); 
+    border: 2px solid white; 
+    border-radius: 20px; 
+    padding: 10px;
+}
+
+QGroupBox:title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+</string>
+    </property>
+    <property name="title">
+     <string>Danh sách phòng trống:</string>
+    </property>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>601</width>
+       <height>250</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+    background-color: rgba(255, 255, 255, 200);
+    border-radius: 15px;
+}
+QHeaderView::section {
+    font-weight: bold;
+    padding: 6px;
+    border: none;
+}
+</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>STT Phòng</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Loại phòng</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Giá/giờ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Giá/đêm</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Trạng thái</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Tầng</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBook">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>470</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgba(255, 255, 255, 160);
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #114514;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 220);
+}
+
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Đặt phòng</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNew">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>470</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgba(255, 255, 255, 160);
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #114514;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 220);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Tạo mới</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonExit">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>470</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: rgba(255, 255, 255, 160);
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #114514;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 220);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>30</y>
+      <width>401</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF; 
+}</string>
+    </property>
+    <property name="text">
+     <string>QUẢN LÝ ĐẶT PHÒNG</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../booking.qrc"/>
+ </resources>
+ <connections/>
+</ui>

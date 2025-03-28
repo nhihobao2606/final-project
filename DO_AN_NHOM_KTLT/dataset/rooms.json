@@ -1,0 +1,162 @@
+[
+    {
+        "room_id": "101",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "trống",
+        "floor": "01"
+    },
+    {
+        "room_id": "102",
+        "room_type": "đơn",
+        "price_hourly": 100000,
+        "price_overnight": 350000,
+        "status": "có",
+        "floor": "01"
+    },
+    {
+        "room_id": "103",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "có",
+        "floor": "01"
+    },
+    {
+        "room_id": "104",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "trống",
+        "floor": "01"
+    },
+    {
+        "room_id": "105",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "có",
+        "floor": "01"
+    },
+    {
+        "room_id": "201",
+        "room_type": "đơn",
+        "price_hourly": 100000,
+        "price_overnight": 350000,
+        "status": "có",
+        "floor": "02"
+    },
+    {
+        "room_id": "202",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "có",
+        "floor": "02"
+    },
+    {
+        "room_id": "203",
+        "room_type": "đơn",
+        "price_hourly": 100000,
+        "price_overnight": 350000,
+        "status": "trống",
+        "floor": "02"
+    },
+    {
+        "room_id": "204",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "trống",
+        "floor": "02"
+    },
+    {
+        "room_id": "205",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "trống",
+        "floor": "02"
+    },
+    {
+        "room_id": "301",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "có",
+        "floor": "03"
+    },
+    {
+        "room_id": "302",
+        "room_type": "đơn",
+        "price_hourly": 100000,
+        "price_overnight": 350000,
+        "status": "có",
+        "floor": "03"
+    },
+    {
+        "room_id": "303",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "trống",
+        "floor": "03"
+    },
+    {
+        "room_id": "304",
+        "room_type": "đơn",
+        "price_hourly": 100000,
+        "price_overnight": 350000,
+        "status": "trống",
+        "floor": "03"
+    },
+    {
+        "room_id": "305",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "trống",
+        "floor": "03"
+    },
+    {
+        "room_id": "401",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "có",
+        "floor": "04"
+    },
+    {
+        "room_id": "402",
+        "room_type": "đơn",
+        "price_hourly": 100000,
+        "price_overnight": 350000,
+        "status": "có",
+        "floor": "04"
+    },
+    {
+        "room_id": "403",
+        "room_type": "đôi",
+        "price_hourly": 200000,
+        "price_overnight": 400000,
+        "status": "trống",
+        "floor": "04"
+    },
+    {
+        "room_id": "404",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "trống",
+        "floor": "04"
+    },
+    {
+        "room_id": "405",
+        "room_type": "VIP",
+        "price_hourly": 300000,
+        "price_overnight": 500000,
+        "status": "có",
+        "floor": "04"
+    }
+]

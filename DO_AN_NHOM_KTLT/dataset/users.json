@@ -1,0 +1,22 @@
+[
+    {
+        "username": "nhi",
+        "password": "123",
+        "role": "Admin"
+    },
+    {
+        "username": "thuong",
+        "password": "345",
+        "role": "Admin"
+    },
+    {
+        "username": "Trammetmoi",
+        "password": "tram123",
+        "role": "Receptionist"
+    },
+    {
+        "username": "Vytrumcoder",
+        "password": "hacker123",
+        "role": "Receptionist"
+    }
+]

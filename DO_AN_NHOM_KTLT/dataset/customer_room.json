@@ -1,0 +1,52 @@
+[
+    {
+        "customer_id": "M01",
+        "room_id": "102",
+        "date_checkin": "2025-03-28 04:30:00"
+    },
+    {
+        "customer_id": "M02",
+        "room_id": "103",
+        "date_checkin": "2025-03-27 14:50:00"
+    },
+    {
+        "customer_id": "M03",
+        "room_id": "105",
+        "date_checkin": "2025-03-26 09:30:00"
+    },
+    {
+        "customer_id": "M04",
+        "room_id": "201",
+        "date_checkin": "2025-03-27 21:15:00"
+    },
+    {
+        "customer_id": "M05",
+        "room_id": "202",
+        "date_checkin": "2025-03-27 10:10:00"
+    },
+    {
+        "customer_id": "M06",
+        "room_id": "301",
+        "date_checkin": "2025-03-26 16:19:00"
+    },
+    {
+        "customer_id": "M07",
+        "room_id": "302",
+        "date_checkin": "2025-03-25 18:14:00"
+    },
+    {
+        "customer_id": "M08",
+        "room_id": "401",
+        "date_checkin": "2025-03-24 09:23:00"
+    },
+    {
+        "customer_id": "M09",
+        "room_id": "402",
+        "date_checkin": "2025-03-25 08:02:00"
+    },
+    {
+        "customer_id": "M10",
+        "room_id": "405",
+        "date_checkin": "2025-03-23 07:40:00"
+    }
+]

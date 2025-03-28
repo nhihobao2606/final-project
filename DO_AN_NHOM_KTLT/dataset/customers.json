@@ -1,0 +1,62 @@
+[
+    {
+        "customer_id": "M01",
+        "name": "Lung Linh",
+        "phone": "0709315384",
+        "cccd": "0522306574"
+    },
+    {
+        "customer_id": "M02",
+        "name": "Thanh Thản",
+        "phone": "0587684258",
+        "cccd": "0792012345"
+    },
+    {
+        "customer_id": "M03",
+        "name": "Long Lanh",
+        "phone": "0308593673",
+        "cccd": "0547254762"
+    },
+    {
+        "customer_id": "M04",
+        "name": "Lấp Lánh",
+        "phone": "0956384652",
+        "cccd": "0823045678"
+    },
+    {
+        "customer_id": "M05",
+        "name": "Kiêu Sa",
+        "phone": "0853795273",
+        "cccd": "0654071238"
+    },
+    {
+        "customer_id": "M06",
+        "name": "Hột Lựu",
+        "phone": "0625739406",
+        "cccd": "0285078923"
+    },
+    {
+        "customer_id": "M07",
+        "name": "Lựu Đạn",
+        "phone": "0506384624",
+        "cccd": "0945098760"
+    },
+    {
+        "customer_id": "M08",
+        "name": "Aka",
+        "phone": "0383825403",
+        "cccd": "0104646832"
+    },
+    {
+        "customer_id": "M09",
+        "name": "Mèo Sammy",
+        "phone": "0264835463",
+        "cccd": "0352846348"
+    },
+    {
+        "customer_id": "M10",
+        "name": "Vy đẹp gái",
+        "phone": "0756835483",
+        "cccd": "0592467490"
+    }
+]
